@@ -1,0 +1,463 @@
+@font-face{
+	font-family: 'Bungee Inline', cursive;
+	src: url('font/BungeeInline-Regular.ttf');
+}
+@font-face{
+	font-family: 'Lato', sans-serif;
+	src: url('font/Lato-Regular.ttf');
+}
+/*Home*/
+.context {
+    width: 100%;
+    position: absolute;
+    top:40vh;
+    
+}
+.context .port{
+    text-align: right;
+    margin-right: 30px;
+}
+.context .folio{
+	text-align: left;
+    margin-left: 10px;
+    margin-right: 30px;
+}
+h1 {
+	font-family: 'Bungee Inline', cursive;
+	background-image: url('../image/space3.gif');
+	background-size: cover;
+	color: transparent;
+	-moz-background-clip: text;
+	-webkit-background-clip: text;
+	text-transform: uppercase;
+	font-size: 70px;
+}
+.logo {
+	position: absolute;
+	height: auto;
+	max-width: 50%;
+}
+/*Réalisation*/
+.rea{
+	z-index: 1;
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-size: 40px;
+	padding: 10px;
+	transition: 0.3s;
+	animation-duration: 3s;
+	animation-name: titre;
+	color: #d3d5fd;
+	text-align: center;
+	text-shadow: 3px 3px 4px #474a56;
+}
+@keyframes titre {
+	0% {
+		opacity: 0;
+		animation-delay: 5s;
+	}
+	100% {
+		opacity: 1;
+		color: #d3d5fd;
+		animation-delay: 5s;
+	}
+} 
+p {
+	color: white;
+	text-align: center;
+	font-size: 20px;
+	margin: 5px;
+}
+.portfolio {
+	height: auto;
+	max-width: 80%;
+}
+.image {
+	display: inline-block;
+	position: relative;
+}
+.but{
+	text-align: center;
+	margin: 30px;
+}
+img {
+	transform: scale(1);
+	transition: 0.5s ease-in-out;
+}
+img:hover {
+	transform: scale(1.1);
+}
+a {
+	font-size: 1.5rem;
+	padding: 1rem 3rem;
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.btn {
+	color: white;
+ 	text-decoration: none;
+	border: 2px solid rgb(146, 148, 248);
+ 	border-radius: 50px;
+	position: relative;
+	overflow: hidden;
+	padding: 15px;
+	transform: scale(1);
+	transition: 0.5s ease-in-out;
+}
+
+.btn:hover {
+	color: #d3d5fd;
+	transform: scale(1.1);
+}
+
+.btn:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(100deg, transparent, rgba(146, 148, 248, 0.4), transparent);
+	transition: all 650ms;
+}
+
+.btn:hover:before {
+  left: 100%;
+}
+/*A Propros*/
+.qui{
+	z-index: 1;
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-size: 40px;
+	padding: 10px;
+	transition: 0.3s;
+	animation-duration: 3s;
+	animation-name: titres;
+	color: #d3d5fd;
+	text-align: center;
+	text-shadow: 3px 3px 4px #474a56;
+}
+p{
+	margin-top: 50px;
+	margin-right: 30px;
+}
+@keyframes titres {
+	0% {
+		opacity: 0;
+		animation-delay: 5s;
+	}
+	100% {
+		opacity: 1;
+		color: #d3d5fd;
+		animation-delay: 5s;
+	}
+}
+
+/*Fond*/ 
+
+.fond{
+    background: #d3d5fd;  
+    width: 100%;
+    height:100vh;
+}
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: #E4E5FD;
+    animation: animate 30s linear infinite;
+    bottom: -150px;   
+}
+.circles li:nth-child(1){
+    left: 25%;
+    width: 50px;
+    height: 50px;
+    animation-delay: 0s;
+}
+.circles li:nth-child(2){
+    left: 80%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+.circles li:nth-child(6){
+    left: 75%;
+    width: 70px;
+    height: 70px;
+    animation-delay: 3s;
+}
+.circles li:nth-child(7){
+    left: 35%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 7s;
+}
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+.circles li:nth-child(10){
+    left: 15%;
+    width: 100px;
+    height: 100px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+@keyframes animate {
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    100%{
+        transform: translateY(-1100px) rotate(620deg);
+        opacity: 0;
+        border-radius: 50%;
+    }
+}
+.me {
+	height: auto;
+	max-width: 50%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 5px 5px 5px #474a56;
+}
+/*Contact*/
+.contact {
+	height: auto;
+	max-width: 100%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.rea2 {
+	z-index: 1;
+	color: white;
+	font-family: 'Lato', sans-serif;
+	font-size: 40px;
+	padding: 10px;
+	transition: 0.3s;
+	animation-duration: 3s;
+	animation-name: titre;
+	color: #d3d5fd;
+	text-align: center;
+	text-shadow: 3px 3px 4px black;
+}
+#trait {
+	border-top : 4px solid white;
+	width : 100px;
+	margin: 10px;
+	border-radius: 30px;
+	box-shadow: 3px 3px 4px #474a56;
+}
+#trait2{
+	border-top : 4px solid white;
+	width : 100px;
+	margin-left: 80px;
+	border-radius: 30px;
+	box-shadow: 3px 3px 4px #474a56;
+}
+#trait3 {
+	border-top : 4px solid white;
+	width : 100px;
+	margin: 10px;
+	border-radius: 30px;
+	box-shadow: 3px 3px 4px black;
+}
+#trait4{
+	border-top : 4px solid white;
+	width : 100px;
+	margin-left: 80px;
+	border-radius: 30px;
+	box-shadow: 3px 3px 4px black;
+}
+	.droit {
+		text-align: left;
+		font-size: 10px;
+		margin-top: 200px;
+	}
+
+@media screen and (min-width: 768px){
+	#trait {
+		margin-top: 50px;
+	}
+/*Home*/
+	h1 {
+		font-family: 'Bungee Inline', cursive;
+		background-image: url('../image/space3.gif');
+		background-size: cover;
+		color: transparent;
+		-moz-background-clip: text;
+		-webkit-background-clip: text;
+		text-transform: uppercase;
+		font-size: 105px;
+	}
+	.context .port {
+		margin-right: 40px;
+	}
+	.context .folio {
+		margin-right: 30px;
+	}
+	.logo {
+		position: absolute;
+		height: auto;
+		max-width: 30%;
+	}
+/*Réalisation*/
+	.rea {
+		font-size: 50px;
+	}
+	p {
+		font-size: 20px;
+		margin-top: 60px;
+		margin-right: 30px;
+	}
+	.portfolio {
+		height: auto;
+		max-width: 80%;
+	}
+/*A propos*/
+	.qui {
+		font-size: 50px;
+	}
+/*Contact*/
+	.rea2 {
+		font-size: 50px;
+	}
+	.droit {
+		text-align: left;
+		font-size: 10px;
+		margin-top: 200px;
+	}
+}
+@media screen and (min-width: 992px){
+/*Home*/
+	.context {
+	    width: 100%;
+	    position: absolute;
+	    top:40vh;
+	    
+	}
+	.context .port{
+	    text-align: right;
+	    margin-right: 30px;
+	}
+	.context .folio{
+		text-align: left;
+	    margin-left: 10px;
+   		margin-right: 30px;
+	}
+	h1 {
+		font-family: 'Bungee Inline', cursive;
+		background-image: url('../image/space3.gif');
+		background-size: cover;
+		color: transparent;
+		-moz-background-clip: text;
+		-webkit-background-clip: text;
+		text-transform: uppercase;
+		font-size: 150px;
+	}
+	.logo {
+		position: absolute;
+		height: auto;
+		max-width: 20%;
+	}
+/*Réalisation*/
+	.rea{
+		z-index: 1;
+		color: white;
+		font-family: 'Lato', sans-serif;
+		font-size: 80px;
+		padding: 10px;
+		transition: 0.3s;
+		animation-duration: 3s;
+		animation-name: titre;
+		color: #d3d5fd;
+		text-align: center;
+		text-shadow: 3px 3px 4px #474a56;
+	}
+	p {
+		color: white;
+		text-align: center;
+		font-size: 30px;
+	}
+	.qui{
+		z-index: 1;
+		color: white;
+		font-family: 'Lato', sans-serif;
+		font-size: 80px;
+		padding: 10px;
+		transition: 0.3s;
+		animation-duration: 3s;
+		animation-name: titres;
+		color: #d3d5fd;
+		text-align: center;
+		text-shadow: 3px 3px 4px #474a56;
+	}
+	.rea2 {
+		z-index: 1;
+		color: white;
+		font-family: 'Lato', sans-serif;
+		font-size: 80px;
+		padding: 10px;
+		transition: 0.3s;
+		animation-duration: 3s;
+		animation-name: titre;
+		color: #d3d5fd;
+		text-align: center;
+		text-shadow: 3px 3px 4px black;
+	}
+
+	p {
+		margin-top: 30px;
+	}
+	.droit {
+		text-align: left;
+		font-size: 10px;
+		margin-top: 200px;
+	}
+}
